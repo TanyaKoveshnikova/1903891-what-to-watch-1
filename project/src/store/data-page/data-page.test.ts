@@ -71,8 +71,8 @@ describe('Reducer: data-page', () => {
         isDataLoading: true,
         avatarUrl: avatarUrl,
         error: null
-      }
-      expect(dataPageStore.reducer(stateLogout, { type: logoutAction.fulfilled.type }))
+      };
+      expect(dataPageStore.reducer(stateLogout, {type: logoutAction.fulfilled.type}))
         .toEqual({
           authorizationStatus: AuthorizationStatus.NoAuth,
           isDataLoading: true,
